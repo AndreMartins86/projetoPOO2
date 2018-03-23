@@ -53,8 +53,7 @@ public class jurosComposto extends HttpServlet {
             double cj=0;
             double v = 0;
             int p = 0;
-            try
-            {
+            try{
                 j = Double.parseDouble(request.getParameter("j"));
                 v = Double.parseDouble(request.getParameter("v"));
                 p = Integer.parseInt(request.getParameter("p"));
@@ -65,15 +64,14 @@ public class jurosComposto extends HttpServlet {
             }
             cj = v;
             j = j/100;
-            for(int i = 0; i < p; i++)
-            {
+            for(int i = 0; i < p; i++){
+                
                 cj = (j * cj) + cj;
                 out.println("<tr>"
                     + "<td>R$"+ df.format(v) +"</td>"
                     + "<td> R$" + df.format(cj) + "</td>"
                     + "<td>" + (i+1) + "</td>"
-                    + "</tr>");
-            
+                    + "</tr>");            
             }
             out.println("</table></center>");
             out.println("</body>");
