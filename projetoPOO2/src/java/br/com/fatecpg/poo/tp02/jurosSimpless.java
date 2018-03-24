@@ -43,21 +43,36 @@ public class jurosSimpless extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1> Juros Simples</h1>");
-            out.println("<form method='GET'>"
+            out.println("<form method='get'>"
                     + "<div class=\"form-group\">\n" +
 "    <label for=\"exampleFormControlInput1\">Capital:</label>\n" +
-"    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe o capital\">\n" +
+"    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe o capital\" name='capital'>\n" +
 "  </div>"
                     + "<div class=\"form-group\">\n" +
 "    <label for=\"exampleFormControlInput1\">Taxa de Juros:</label>\n" +
-"    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe a taxa de juros\">\n" +
+"    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe a taxa de juros\" name='taxaJuros'>\n" +
 "  </div>"
                     + "<div class=\"form-group\">\n" +
 "    <label for=\"exampleFormControlInput1\">Periodo:</label>\n" +
-"    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe o periodo em meses\">\n" +
+"    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe o periodo em meses\" name='periodo'>\n" +
 "  </div>"
                     + "<input type='submit' value='Calcular'> </form>");
-            out.println("");
+            double capital = 0;
+            double taxaJuros = 0;
+            int periodo = 0;
+            double montante = 0;
+            double converteTaxa = 0;
+            double juros = 0;
+            
+             capital = Double.parseDouble(request.getParameter("capital"));
+             taxaJuros = Double.parseDouble(request.getParameter("taxaJuros"));
+             periodo = Integer.parseInt(request.getParameter("periodo"));
+             
+            converteTaxa = (taxaJuros/100);
+            juros = ((capital * converteTaxa)*periodo);
+            montante = capital + juros;
+            out.println("<h1> Juros: "+juros + "</h1>");
+            out.println("<h1>Montante: "+montante + "</h1>");
             out.println("");
             out.println("");
             out.println("");
