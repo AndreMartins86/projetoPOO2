@@ -45,7 +45,7 @@ public class jurosComposto extends HttpServlet {
                     + "</form></table></center><hr>");
             out.println("<center><table width='100%' style='text-align:left;'>");
             out.println("<tr>"
-                    + "<th>Valor</th>"
+                    + "<th>Valor </th>"
                     + "<th>Com juros</th>"
                     + "<th>Mês</th>"
                     + "</tr>");
