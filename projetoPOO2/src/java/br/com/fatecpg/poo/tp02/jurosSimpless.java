@@ -37,12 +37,16 @@ public class jurosSimpless extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
+            
+           
             out.println("<title>Servlet jurosSimpless</title>");      
             out.println("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n" +
-"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>");
+"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>"
+                    );
+            out.println("<link rel='stylesheet' type='text/css' href='" + request.getContextPath() +"style.css'>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1> Juros Simples</h1>");
+            out.println("<h1 class='teste'> Juros Simples</h1>");
             out.println("<form method='get'>"
                     + "<div class=\"form-group\">\n" +
 "    <label for=\"exampleFormControlInput1\">Capital:</label>\n" +
@@ -57,6 +61,9 @@ public class jurosSimpless extends HttpServlet {
 "    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe o periodo em meses\" name='periodo'>\n" +
 "  </div>"
                     + "<input type='submit' value='Calcular'> </form>");
+            
+            
+            
             double capital = 0;
             double taxaJuros = 0;
             int periodo = 0;
