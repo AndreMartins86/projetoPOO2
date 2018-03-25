@@ -46,8 +46,13 @@ public class jurosSimpless extends HttpServlet {
             out.println(".caixa{width:100%;height:85px;background-color:#447FFF;}"
                     + ".caixa h1{text-align:center;padding-top:20px;color:#FFF;text-shadow:1px 1px 1px black;}"
                     + ".formulario{width:300px;margin:30px auto;}"
-                    + ".formulario label{font-size:15px;color:gray;}"
-                    + ".formulario .btnEnviar{background-color:#237382;border:3px;width:130px;height:40px;font-size:14px;color:#fff;}");
+                    + ".formulario label{font-size:15px;color:gray;font-weight:600;}"
+                    + ".formulario .btnEnviar{background-color:#237382;border:3px;width:130px;height:40px;font-size:16px;color:#fff;}"
+                    + ".formulario .limpar{background:rgb(252,45,54);margin-left:10px;}"
+                    + ".tabResultado{width:700px;margin:0 auto;}"
+                    + ".tabResultado th{background:#A2E3D5;font-weight:600;color:#fff;text-shadow:1px 1px 2px gray;}"
+                    + ".tabResultado td{background:#FDFFF5;text-align:center;font-size:18px;font-weight:bolder;color:#FF715E;}"
+                    + "footer .caixa{margin-top:30px;}");
             
             out.println("</style>");
             out.println("</head>");
@@ -69,7 +74,8 @@ public class jurosSimpless extends HttpServlet {
 "    <label for=\"exampleFormControlInput1\">Periodo:</label>\n" +
 "    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe o periodo em meses\" name='periodo'>\n" +
 "  </div>"
-                    + "<input type='submit' value='Calcular' class='btnEnviar'> </form>");
+                    + "<input type='submit' value='Calcular' class='btnEnviar'>"
+                    + "<input type='reset' value='Limpar' class='btnEnviar limpar'> </form>");
             
             
             
@@ -87,11 +93,35 @@ public class jurosSimpless extends HttpServlet {
             converteTaxa = (taxaJuros/100);
             juros = ((capital * converteTaxa)*periodo);
             montante = capital + juros;
-            out.println("<h1> Juros: "+juros + "</h1>");
-            out.println("<h1>Montante: "+montante + "</h1>");
-            out.println("");
-            out.println("");
-            out.println("");
+            
+            
+            out.println(" <table class=\"table tabResultado\">\n" +
+"    \n" +
+"      <tr>\n" +
+"        <th>Valor do Capital</th>\n" +
+"        <td>R$"+capital +"</td>\n" +
+"      </tr>\n" +
+"      <tr>\n" +
+"        <th>Taxa de Juros</th>\n" +
+"        <td>"+ taxaJuros+"%</td>\n" +
+"      </tr>\n" +
+"      <tr>\n" +
+"        <th>Periodo</th>\n" +
+"        <td>"+periodo+" meses</td>\n" +
+"      </tr>\n" +
+"      <tr>\n" +
+"        <th>Total de Juros</th>\n" +
+"        <td>R$"+juros+"</td>\n" +
+"      </tr>"
+    + " <tr>\n" +
+"        <th>Montante</th>\n" +
+"        <td>R$"+montante+"</td>\n" +
+"      </tr>  "
+        + "</table>\n" +
+"</div>");
+            out.println("<footer>");
+            out.println("<div class='caixa'></div>");
+            out.println("</footer>");
             out.println("</body>");
             out.println("</html>");
         }
