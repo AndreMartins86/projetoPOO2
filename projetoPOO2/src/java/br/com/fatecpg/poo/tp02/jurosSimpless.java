@@ -44,8 +44,10 @@ public class jurosSimpless extends HttpServlet {
             out.println("<style>");
             
             out.println(".caixa{width:100%;height:85px;background-color:#447FFF;}"
-                    + ".caixa h1{text-align:center;padding-top:20px;color:#FFF;text-shadow:1px 1px 1px black;};"
-                    + ".formulario{background-color:green;};");
+                    + ".caixa h1{text-align:center;padding-top:20px;color:#FFF;text-shadow:1px 1px 1px black;}"
+                    + ".formulario{width:300px;margin:30px auto;}"
+                    + ".formulario label{font-size:15px;color:gray;}"
+                    + ".formulario .btnEnviar{background-color:#237382;border:3px;width:130px;height:40px;font-size:14px;color:#fff;}");
             
             out.println("</style>");
             out.println("</head>");
@@ -67,7 +69,7 @@ public class jurosSimpless extends HttpServlet {
 "    <label for=\"exampleFormControlInput1\">Periodo:</label>\n" +
 "    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe o periodo em meses\" name='periodo'>\n" +
 "  </div>"
-                    + "<input type='submit' value='Calcular'> </form>");
+                    + "<input type='submit' value='Calcular' class='btnEnviar'> </form>");
             
             
             
