@@ -37,7 +37,6 @@ public class jurosSimpless extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            
            
             out.println("<title>Servlet jurosSimpless</title>");      
             out.println("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n" +
@@ -46,7 +45,9 @@ public class jurosSimpless extends HttpServlet {
             out.println("<link rel='stylesheet' type='text/css' href='" + request.getContextPath() +"style.css'>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1 class='teste'> Juros Simples</h1>");
+            out.println("<div>");
+            out.println(" <h1> Juros Simples</h1>");
+            out.println("</div>");
             out.println("<form method='get'>"
                     + "<div class=\"form-group\">\n" +
 "    <label for=\"exampleFormControlInput1\">Capital:</label>\n" +
