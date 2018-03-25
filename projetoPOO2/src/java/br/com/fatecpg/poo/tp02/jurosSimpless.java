@@ -44,13 +44,13 @@ public class jurosSimpless extends HttpServlet {
             out.println("<style>");
             
             out.println(".caixa{width:100%;height:85px;background-color:#447FFF;}"
-                    + ".caixa h1{text-align:center;padding-top:20px;color:#FFF;text-shadow:1px 1px 1px black;}"
+                    + ".caixa h1{text-align:center;padding-top:20px;color:#FFF;text-shadow:2px 3px 2px gray;}"
                     + ".formulario{width:300px;margin:30px auto;}"
                     + ".formulario label{font-size:15px;color:gray;font-weight:600;}"
                     + ".formulario .btnEnviar{background-color:#237382;border:3px;width:130px;height:40px;font-size:16px;color:#fff;}"
                     + ".formulario .limpar{background:rgb(252,45,54);margin-left:10px;}"
                     + ".tabResultado{width:700px;margin:0 auto;}"
-                    + ".tabResultado th{background:#A2E3D5;font-weight:600;color:#fff;text-shadow:1px 1px 2px gray;}"
+                    + ".tabResultado th{background:#9EC0E3;font-weight:600;color:#fff;text-shadow:1px 1px 2px gray;font-size:18px;text-align:center;}"
                     + ".tabResultado td{background:#FDFFF5;text-align:center;font-size:18px;font-weight:bolder;color:#FF715E;}"
                     + "footer .caixa{margin-top:30px;}");
             
@@ -63,7 +63,7 @@ public class jurosSimpless extends HttpServlet {
             
             out.println("<form method='get' class=formulario>"
                     + "<div class=\"form-group\">\n" +
-"    <label for=\"exampleFormControlInput1\">Capital:</label>\n" +
+"    <label>Capital:</label>\n" +
 "    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe o capital\" name='capital'>\n" +
 "  </div>"
                     + "<div class=\"form-group\">\n" +
