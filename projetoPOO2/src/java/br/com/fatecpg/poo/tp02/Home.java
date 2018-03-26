@@ -59,7 +59,7 @@ public class Home extends HttpServlet {
             out.println("</div>");
             out.println("<div class='escolha'>"                    
                     +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosSimpless'\" class=\"btnSimples\">Juros Simples</button>"
-                    +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/juros-composto'\" class=\"btnComposto\">Juros Composto</button> </div>");
+                    +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosComposto'\" class=\"btnComposto\">Juros Composto</button> </div>");
             out.println("</body>");
             out.println("</html>");
         }
