@@ -7,6 +7,7 @@ package br.com.fatecpg.poo.tp02;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DecimalFormat;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -78,7 +79,8 @@ public class jurosSimpless extends HttpServlet {
                     + "<input type='reset' value='Limpar' class='btnEnviar limpar'> </form>");
             
             
-            
+            DecimalFormat df = new DecimalFormat("###,##0.00");
+            DecimalFormat j = new DecimalFormat("###0");
             double capital = 0;
             double taxaJuros = 0;
             int periodo = 0;
@@ -99,11 +101,11 @@ public class jurosSimpless extends HttpServlet {
 "    \n" +
 "      <tr>\n" +
 "        <th>Valor do Capital</th>\n" +
-"        <td>R$"+capital +"</td>\n" +
+"        <td>R$"+df.format(capital) +"</td>\n" +
 "      </tr>\n" +
 "      <tr>\n" +
 "        <th>Taxa de Juros</th>\n" +
-"        <td>"+ taxaJuros+"%</td>\n" +
+"        <td>"+ j.format(taxaJuros)+"%</td>\n" +
 "      </tr>\n" +
 "      <tr>\n" +
 "        <th>Periodo</th>\n" +
@@ -111,11 +113,11 @@ public class jurosSimpless extends HttpServlet {
 "      </tr>\n" +
 "      <tr>\n" +
 "        <th>Total de Juros</th>\n" +
-"        <td>R$"+juros+"</td>\n" +
+"        <td>R$"+df.format(juros)+"</td>\n" +
 "      </tr>"
     + " <tr>\n" +
 "        <th>Montante</th>\n" +
-"        <td>R$"+montante+"</td>\n" +
+"        <td>R$"+df.format(montante)+"</td>\n" +
 "      </tr>  "
         + "</table>\n" +
 "</div>");
