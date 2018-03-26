@@ -60,8 +60,10 @@ public class Home extends HttpServlet {
             out.println("<div class='escolha'>"                    
                     +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosSimpless'\" class=\"btnSimples\">Juros Simples</button>"
                     +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosComposto'\" class=\"btnComposto\">Juros Composto</button> </div>");
+            
+            out.println("<img src=\"images/homercontador.png\" class=\"mx-auto d-block\" title=\"Homer Contador\">");
             out.println("</body>");
-            out.println("</html>");
+            out.println("</html>");          
         }
     }
 
