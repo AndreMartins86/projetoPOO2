@@ -1,0 +1,31 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Ailton</td>
+      <td>Gois</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Andre</td>
+      <td>Martins</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Brenner</td>
+      <td>Goncalves</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Pedro</td>
+      <td>Patrinieri</td>
+    </tr>
+  </tbody>
+</table>
