@@ -37,7 +37,9 @@ public class Home extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Home</title>");   
+            out.println("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"");
+            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"_css/estilo.css\"/>");
+            out.println("<title>Home</title>");
             out.println("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n" +
 "<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>"
                     );
@@ -61,9 +63,8 @@ public class Home extends HttpServlet {
                     +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosSimpless'\" class=\"btnSimples\">Juros Simples</button>"
                     +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosComposto'\" class=\"btnComposto\">Juros Composto</button> </div>");
             
-            out.println("<img src=\"images/homercontador.png\" class=\"mx-auto d-block\" title=\"Homer Contador\">");
-            out.println("</body>");
-            out.println("</html>");          
+                //tabela
+                
         }
     }
 
