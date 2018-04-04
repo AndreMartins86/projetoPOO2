@@ -63,7 +63,49 @@ public class Home extends HttpServlet {
                     +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosSimpless'\" class=\"btnSimples\">Juros Simples</button>"
                     +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosComposto'\" class=\"btnComposto\">Juros Composto</button> </div>");
             
-                //tabela
+             
+                out.println("<div class=\"col-md-6 col-md-offset-3\" \"mx-auto d-block\">");
+                out.println("<table class=\"table table-striped table-hover\" \"mx-auto d-block\">" );
+		        out.println("<thead>");
+		        out.println("<tr>");
+		        out.println("<th>Nome</th>");
+		        out.println("<th>Curso</th>");
+		        out.println("<th>Horário</th>");
+		        out.println("</tr>");
+		        out.println("</thead>");
+		        out.println("<tbody>");
+		        out.println("<tr>");
+		        out.println(" <th></th>");
+		        out.println("<td>Ailton Gois</td>");
+		        out.println("<td>ADS</td>");
+		        out.println("<td>Noturno</td>");
+                out.println("</tr>");
+                out.println("<tr>");
+                out.println("<th></th>");
+                out.println("<td>André Martins</td>");
+                out.println("<td>ADS</td>");
+		        out.println("<td>Noturno</td>");
+                out.println("</tr>");
+                out.println("<tr>");
+                out.println("<th></th>");
+                out.println("<td>Brenner Goncalves</td>");
+                out.println("<td>ADS</td>");
+                out.println("<td>Noturno</td>");
+                out.println("</tr>");
+                out.println("<tr>");
+                out.println("<th></th>");
+                out.println("<td>Pedro Patrinieri</td>");
+                out.println("<td>ADS</td>");
+                out.println("<td>Noturno</td>");
+                out.println("</tr>");
+                out.println("</tbody>");
+                out.println("</table>");
+            
+                out.println("<div id=desenho>");
+                out.println("<img src=\"images/homercontador.png\" class=\"mx-auto d-block\" title=\"Homer Contador\">");
+                out.println("</div>");
+                out.println("</body>");
+                out.println("</html>");
                 
         }
     }
