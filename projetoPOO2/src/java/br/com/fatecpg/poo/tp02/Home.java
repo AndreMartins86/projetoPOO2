@@ -44,24 +44,13 @@ public class Home extends HttpServlet {
             out.println("<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH\" crossorigin=\"anonymous\"\n" +
 "<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"\"></script>"
                     );
-            
-            out.println("<style>");
-            
-            out.println(".caixa{width:100%;height:85px;background-color:#447FFF;}"
-                    + ".caixa h1{text-align:center;padding-top:20px;color:#FFF;text-shadow:2px 3px 2px gray;}"
-                    + ".escolha{width:300px;margin:30px auto;}"
-                    + ".escolha .btnSimples{background-color:#262063;border:3px;width:130px;height:40px;font-size:16px;color:#fff;}"
-                    + ".escolha .btnComposto{background-color:#e03131;border:3px;width:130px;height:40px;font-size:16px;color:#fff;}"
-                    + "footer .caixa{margin-top:30px;}");
-            
-            out.println("</style>");
             out.println("</head>");
             out.println("<body>");
             out.println("<div class='caixa'>");
             out.println("<h1>Home</h1>");
             out.println("</div>");
-            out.println("<div class='escolha'>"                    
-                    +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosSimpless'\" class=\"btnSimples\">Juros Simples</button>"
+            out.println("<div class='col-4 mx-auto d-block escolha'>"                    
+                    +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosSimples'\" class=\"btnSimples\">Juros Simples</button>"
                     +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosComposto'\" class=\"btnComposto\">Juros Composto</button> </div>");
             
              

@@ -36,23 +36,11 @@ public class jurosComposto extends HttpServlet {
             out.println("<meta charset=\"UTF-8\">");
             out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
             out.println("<title>Servlet Juros Composto</title>");      
+            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"_css/_estilo.css\"/>");
             out.println("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n" +
 "<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>"
                     );
-            out.println("<style>");
-            
-            out.println(".caixa{width:100%;height:85px;background-color:#447FFF;}"
-                    + ".caixa h1{text-align:center;padding-top:20px;color:#FFF;text-shadow:2px 3px 2px gray;}"
-                    + ".formulario{width:300px;margin:30px auto;}"
-                    + ".formulario label{font-size:15px;color:gray;font-weight:600;}"
-                    + ".formulario .btnEnviar{background-color:#237382;border:3px;width:130px;height:40px;font-size:16px;color:#fff;}"
-                    + ".formulario .limpar{background:rgb(252,45,54);margin-left:10px;}"
-                    + ".tabResultado{width:700px;margin:0 auto;}"
-                    + ".tabResultado th{background:#9EC0E3;font-weight:600;color:#fff;text-shadow:1px 1px 2px gray;font-size:18px;text-align:center;}"
-                    + ".tabResultado td{background:#FDFFF5;text-align:center;font-size:18px;font-weight:bolder;color:#FF715E;}"
-                    + "footer .caixa{margin-top:30px;}");
-            
-            out.println("</style>");
+          
             out.println("</head>");
             out.println("<body>");
             out.println("<div class='caixa'>");
