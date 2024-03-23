@@ -33,6 +33,8 @@ public class jurosComposto extends HttpServlet {
            out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
+            out.println("<meta charset=\"UTF-8\">");
+            out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
             out.println("<title>Servlet Juros Composto</title>");      
             out.println("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n" +
 "<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>"
@@ -71,13 +73,13 @@ public class jurosComposto extends HttpServlet {
 "    <input type=\"text\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"Informe o periodo em meses\" name='t'>\n" +
 "  </div>"
                     + "<input type='submit' value='Calcular' class='btnEnviar'>"
-                    + "<input type='reset' value='Limpar' class='btnEnviar limpar'> </form>");
+                    + "<input type='reset' value='Limpar' class='btnEnviar limpar'> </form>");            
             
             DecimalFormat df = new DecimalFormat("###,##0.00");
-            double i =0;
-            double m=0;
+            double i = 0;
+            double m = 0;
             double c = 0;
-            int t=0;
+            int t = 0;
            
             try
             {

@@ -37,7 +37,8 @@ public class Home extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"");
+            out.println("<meta charset=\"UTF-8\">");
+            out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
             out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"_css/estilo.css\"/>");
             out.println("<title>Home</title>");
             out.println("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n" +
@@ -64,8 +65,8 @@ public class Home extends HttpServlet {
                     +"<button type=\"button\" onclick=\"window.location.href='/projetoPOO2/jurosComposto'\" class=\"btnComposto\">Juros Composto</button> </div>");
             
              
-                out.println("<div class=\"col-md-6 col-md-offset-3\" \"mx-auto d-block\">");
-                out.println("<table class=\"table table-striped table-hover\" \"mx-auto d-block\">" );
+                out.println("<div class=\"col-md-6 col-md-offset-4 mx-auto d-block\">");
+                out.println("<table class=\"table table-striped table-hover mx-auto d-block\">" );
 		        out.println("<thead>");
 		        out.println("<tr>");
 		        out.println("<th>Nome</th>");
