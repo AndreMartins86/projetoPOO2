@@ -110,7 +110,7 @@ public class jurosSimples extends HttpServlet {
 "      </tr>  "
         + "</table>\n" +
 "</div>");
-            out.println("<footer>");
+           out.println("<footer>");
             out.println("<div class='caixa'></div>");
             out.println("</footer>");
             out.println("</body>");
