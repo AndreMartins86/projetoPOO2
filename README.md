@@ -1,2 +1,2 @@
 # projetoPOO2
-repositório para atividade de Servlets
+repositório para atividade de Java Servlets
